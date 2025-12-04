@@ -93,7 +93,7 @@ const PM_TYPES = ['PM1', 'PM2', 'PM3', 'PM4'];
 
 const DUMMY_AUTH_DB = [
     { id: 'admin1', username: 'admin', role: 'Administrador', password: '123' },
-    { id: 'inst1', username: 'Usuario', role: 'Usuario', password: '456' },
+    { id: 'inst1', username: 'Usuario', role: 'Usuario', password: '1234567890' },
     { id: 'student1', username: 'Visor', role: 'Visor', password: '789' },
 ];
 
