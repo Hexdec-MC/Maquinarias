@@ -14,7 +14,7 @@ const MachineUsageSection = ({ userId, userName, machines, currentJob, setCurren
    const [endFuel, setEndFuel] = useState('');
    const [modalOpen, setModalOpen] = useState(false);
    const [isStartingJob, setIsStartingJob] = useState(null);
-   const canOperate = userRole === 'Administrador' || userRole === 'Instructor';
+   const canOperate = userRole === 'Administrador' || userRole === 'Usuario';
 
    const startJob = async (machine) => {
        if (!canOperate) return showMessage('No tienes permisos para operar', 'error');

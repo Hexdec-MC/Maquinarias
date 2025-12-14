@@ -10,7 +10,7 @@ const Layout = ({ user, activeTab, setActiveTab, onLogout, machines, supplies, c
         { id: 'maintenance', label: 'Mantenimiento', icon: Wrench },
         { id: 'inventory', label: 'Inventario', icon: Package },
     ];
-    if (user?.role === 'Administrador' || user?.role === 'Instructor') navItems.push({ id: 'users', label: 'Usuarios', icon: Users });
+    if (user?.role === 'Administrador' || user?.role === 'Usuario') navItems.push({ id: 'users', label: 'Usuarios', icon: Users });
 
     return (
         <div className="min-h-[100dvh] bg-gray-50 font-sans flex flex-col md:flex-row text-gray-900">

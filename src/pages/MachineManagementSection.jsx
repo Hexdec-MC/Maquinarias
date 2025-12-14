@@ -19,8 +19,8 @@ const MachineManagementSection = ({ userId, machines, showMessage, userRole }) =
 
    // Permission updates: Split edit and create permissions
    const canEdit = userRole === 'Administrador';
-   const canCreate = userRole === 'Administrador' || userRole === 'Instructor'; // Instructors can now create
-   const canRefuel = userRole === 'Administrador' || userRole === 'Instructor';
+   const canCreate = userRole === 'Administrador' || userRole === 'Usuario'; // Usuario can now create
+   const canRefuel = userRole === 'Administrador' || userRole === 'Usuario';
 
    const openModal = (machine = null) => { setEditingMachine(machine); if (machine) { const seqIdx = machine.next_pm_sequence_index !== undefined ? machine.next_pm_sequence_index : getRecommendedSequenceIndex(machine.current_hm); setFormData({ name: machine.name, model: machine.model, plate: machine.plate || '', current_hm: machine.current_hm, next_pm_sequence_index: seqIdx, fuel_level: machine.fuel_level || 100, image_type: machine.image_type || 'preset', image_src: machine.image_src || 'excavator' });
    } else { setFormData({ name: '', model: '', plate: '', current_hm: '', next_pm_sequence_index: 0, fuel_level: 100, image_type: 'preset', image_src: 'excavator' });

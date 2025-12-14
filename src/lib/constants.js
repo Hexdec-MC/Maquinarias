@@ -33,8 +33,8 @@ export const PM_TYPES = ['PM1', 'PM2', 'PM3', 'PM4'];
 
 export const DUMMY_AUTH_DB = [
    { id: 'admin1', username: 'admin', role: 'Administrador', password: '123' },
-   { id: 'inst1', username: 'instructor', role: 'Instructor', password: '456' },
-   { id: 'student1', username: 'estudiante', role: 'Estudiante', password: '789' },
+   { id: 'inst1', username: 'Usuario', role: 'Usuario', password: '456' },
+   { id: 'student1', username: 'Visor', role: 'Visor', password: '789' },
 ];
 
 export const DUMMY_MACHINES = [

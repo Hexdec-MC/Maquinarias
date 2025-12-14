@@ -17,8 +17,8 @@ const InventorySection = ({ userId, supplies, showMessage, userRole }) => {
    const [confirmDeleteId, setConfirmDeleteId] = useState(null);
 
    // Permission Logic
-   const canCreate = userRole === 'Administrador' || userRole === 'Instructor';
-   const canRestock = userRole === 'Administrador' || userRole === 'Instructor';
+   const canCreate = userRole === 'Administrador' || userRole === 'Usuario';
+   const canRestock = userRole === 'Administrador' || userRole === 'Usuario';
    const canEditDelete = userRole === 'Administrador';
    const filteredSupplies = supplies.filter(s => s.name.toLowerCase().includes(search.toLowerCase()));
 

@@ -23,7 +23,7 @@ const MaintenanceSection = ({ userId, machines, supplies, history, pmConfigs, sh
    const [kitForm, setKitForm] = useState({ supplyId: '', qty: 1, isMandatory: true });
    const currentPmConfig = pmConfigs[selectedPmType] || [];
    // Permissions
-   const canRegister = userRole === 'Administrador' || userRole === 'Instructor';
+   const canRegister = userRole === 'Administrador' || userRole === 'Usuario';
    const canManageKits = userRole === 'Administrador';
 
    // Funciones Kits
